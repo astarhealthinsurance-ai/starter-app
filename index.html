@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Welcome back</p>
+          <h1>TaskFlow</h1>
+        </div>
+        <button id="new-task-btn" class="primary-btn">+ New Task</button>
+      </header>
+
+      <main class="layout">
+        <aside class="sidebar card">
+          <h2>Overview</h2>
+          <div class="stats">
+            <div>
+              <span>Total</span>
+              <strong id="total-count">0</strong>
+            </div>
+            <div>
+              <span>Done</span>
+              <strong id="done-count">0</strong>
+            </div>
+            <div>
+              <span>Open</span>
+              <strong id="open-count">0</strong>
+            </div>
+          </div>
+        </aside>
+
+        <section class="content card">
+          <div class="task-creator hidden" id="task-form-wrap">
+            <input id="task-input" type="text" placeholder="Add a new task..." />
+            <button id="add-task-btn" class="primary-btn">Save</button>
+          </div>
+
+          <ul id="task-list" class="task-list"></ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
